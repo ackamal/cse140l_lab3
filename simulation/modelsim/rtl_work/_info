@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/kamal/projects/cse140l/lab3/simulation/modelsim
+vdecoder_3bit
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1590444883
+!i10b 1
+!s100 4Bz8OU4`S2KS7XP[;XFH[0
+I@94lQl_eMNo^Hn@^]4R>Y2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 decoder_3bit_sv_unit
+S1
+R0
+w1590264268
+8C:/Users/kamal/projects/cse140l/lab3/src/decoder_3bit.sv
+FC:/Users/kamal/projects/cse140l/lab3/src/decoder_3bit.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1590444883.000000
+!s107 C:/Users/kamal/projects/cse140l/lab3/src/decoder_3bit.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/kamal/projects/cse140l/lab3/src/decoder_3bit.sv|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtraffic_light_controller
+R1
+R2
+!i10b 1
+!s100 :?ojFQ3^n3iP@GVl93:I00
+I:E=zil[IRiUeo;hj;B:an3
+R3
+!s105 traffic_light_controller2_sv_unit
+S1
+R0
+w1590444843
+8C:/Users/kamal/projects/cse140l/lab3/src/traffic_light_controller2.sv
+FC:/Users/kamal/projects/cse140l/lab3/src/traffic_light_controller2.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/kamal/projects/cse140l/lab3/src/traffic_light_controller2.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/kamal/projects/cse140l/lab3/src/traffic_light_controller2.sv|
+!i113 1
+R6
+R7
+vtraffic_tb
+R1
+R2
+!i10b 1
+!s100 675dU]^8QkN`CAZUccQA41
+IAk^aVV5VWXmk8n8[JWi2>2
+R3
+!s105 basic_tb_sv_unit
+S1
+R0
+w1590443913
+8C:/Users/kamal/projects/cse140l/lab3/src/basic_tb.sv
+FC:/Users/kamal/projects/cse140l/lab3/src/basic_tb.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/kamal/projects/cse140l/lab3/src/basic_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/kamal/projects/cse140l/lab3/src/basic_tb.sv|
+!i113 1
+R6
+R7

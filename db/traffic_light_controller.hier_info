@@ -1,0 +1,77 @@
+|traffic_light_controller
+clk => present_state[0].CLK
+clk => present_state[1].CLK
+clk => present_state[2].CLK
+clk => present_state[3].CLK
+clk => ct_5_en.CLK
+clk => ct_10_en.CLK
+clk => ct_2_en.CLK
+clk => ct_10[0].CLK
+clk => ct_10[1].CLK
+clk => ct_10[2].CLK
+clk => ct_10[3].CLK
+clk => ct_5[0].CLK
+clk => ct_5[1].CLK
+clk => ct_5[2].CLK
+clk => ct_5[3].CLK
+clk => ct_2[0].CLK
+clk => ct_2[1].CLK
+clk => ct_2[2].CLK
+clk => ct_2[3].CLK
+reset => ct_2.OUTPUTSELECT
+reset => ct_2.OUTPUTSELECT
+reset => ct_2.OUTPUTSELECT
+reset => ct_2.OUTPUTSELECT
+ew_str_sensor => next_state.OUTPUTSELECT
+ew_str_sensor => next_state.OUTPUTSELECT
+ew_str_sensor => do_transition.OUTPUTSELECT
+ew_str_sensor => next_state.OUTPUTSELECT
+ew_str_sensor => next_state.OUTPUTSELECT
+ew_str_sensor => do_transition.OUTPUTSELECT
+ew_str_sensor => always1.IN1
+ew_str_sensor => always1.IN1
+ew_str_sensor => do_transition.DATAA
+ew_str_sensor => next_state.DATAA
+ew_str_sensor => next_state.DATAA
+ew_left_sensor => next_state.OUTPUTSELECT
+ew_left_sensor => next_state.OUTPUTSELECT
+ew_left_sensor => do_transition.OUTPUTSELECT
+ew_left_sensor => next_state.OUTPUTSELECT
+ew_left_sensor => next_state.OUTPUTSELECT
+ew_left_sensor => next_state.OUTPUTSELECT
+ew_left_sensor => do_transition.OUTPUTSELECT
+ew_left_sensor => always1.IN0
+ew_left_sensor => next_state.DATAA
+ew_left_sensor => do_transition.DATAA
+ew_left_sensor => next_state.DATAA
+ns_sensor => next_state.OUTPUTSELECT
+ns_sensor => next_state.OUTPUTSELECT
+ns_sensor => do_transition.OUTPUTSELECT
+ns_sensor => next_state.OUTPUTSELECT
+ns_sensor => next_state.OUTPUTSELECT
+ns_sensor => next_state.OUTPUTSELECT
+ns_sensor => do_transition.OUTPUTSELECT
+ns_sensor => always1.IN1
+ns_sensor => do_transition.DATAA
+ns_sensor => next_state.DATAA
+ns_sensor => next_state.DATAA
+ew_str_light[0] <= decoder_3bit:dcdr.ew_str_light[0]
+ew_str_light[1] <= decoder_3bit:dcdr.ew_str_light[1]
+ew_left_light[0] <= decoder_3bit:dcdr.ew_left_light[0]
+ew_left_light[1] <= decoder_3bit:dcdr.ew_left_light[1]
+ns_light[0] <= decoder_3bit:dcdr.ns_light[0]
+ns_light[1] <= decoder_3bit:dcdr.ns_light[1]
+
+
+|traffic_light_controller|decoder_3bit:dcdr
+bits[0] => Decoder0.IN2
+bits[1] => Decoder0.IN1
+bits[2] => Decoder0.IN0
+ew_str_light[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ew_str_light[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ew_left_light[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ew_left_light[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ns_light[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+ns_light[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+

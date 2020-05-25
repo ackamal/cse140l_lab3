@@ -1,0 +1,49 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ew_str_light[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ew_str_light[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ew_left_light[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ew_left_light[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ns_light[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ns_light[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ns_sensor",
+					"strict" : false
+				},
+				{
+					"name" : "ew_str_sensor",
+					"strict" : false
+				},
+				{
+					"name" : "ew_left_sensor",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/kamal/projects/cse140l/lab3/src {C:/Users/kamal/projects/cse140l/lab3/src/counter10.sv}
+vlog -sv -work work +incdir+C:/Users/kamal/projects/cse140l/lab3/src {C:/Users/kamal/projects/cse140l/lab3/src/counter5.sv}
+vlog -sv -work work +incdir+C:/Users/kamal/projects/cse140l/lab3/src {C:/Users/kamal/projects/cse140l/lab3/src/counter.sv}
+vlog -sv -work work +incdir+C:/Users/kamal/projects/cse140l/lab3/src {C:/Users/kamal/projects/cse140l/lab3/src/decoder_3bit.sv}
+vlog -sv -work work +incdir+C:/Users/kamal/projects/cse140l/lab3/src {C:/Users/kamal/projects/cse140l/lab3/src/traffic_light_controller2.sv}
+
