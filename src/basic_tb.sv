@@ -5,8 +5,8 @@ logic reset = 1'b1;
 logic ew_left_sensor,		  // left traffic on e-w street
 	  ew_str_sensor,		  // thru traffic on e-w street
 	  ns_sensor;              // traffic on n-s street
-wire [1:0] ew_left_light,     // left arrow
-	       ew_str_light,	  // straight ahead e-w
+wire [1:0] ew_str_light,     // left arrow
+	       ew_left_light,	  // straight ahead e-w
 	       ns_light;
 // your controller goes here
 // input ports = logics above (traffic sensors)
@@ -17,7 +17,7 @@ always begin				  // digital clock for our state machine
   #5ns clk = 1'b1;
   #5ns clk = 1'b0;
 // print yellow and green states on transcript
-  case({ew_left_light,ew_str_light,ns_light})
+  case({ew_str_light,ew_left_light,ns_light})
    6'b00_00_00: $display("           %t",$time);
 	6'b01_00_00: $display("y          %t",$time);
 	6'b10_00_00: $display("g          %t",$time);
@@ -39,7 +39,7 @@ initial begin
 
 // Test red to EW_STR green to EW_STR yellow to red without more traffic
 
-// Should turn green for 10 cycles, then yellow for 2 cycles, then red
+// Should turn green for 3 cycles, waits 5 cycles, then yellow for 2 cycles, then red
   ew_str_sensor = 1'b1;
   #30ns ew_str_sensor = 1'b0;
   #90ns;  
